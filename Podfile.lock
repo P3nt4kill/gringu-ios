@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.7.3)
+  - Cosmos (16.0.0)
   - ReSwift (4.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - Cosmos
   - ReSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Cosmos
     - ReSwift
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
 
-PODFILE CHECKSUM: 73101da8732c3c8e15372cd8d2ac8c48943a1b65
+PODFILE CHECKSUM: eff5348d022572767b399b5a8e66588ca16ce5d6
 
 COCOAPODS: 1.5.3

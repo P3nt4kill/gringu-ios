@@ -47,6 +47,7 @@
                     <connections>
                         <outlet property="containerView" destination="rfw-ay-KAG" id="CrE-ci-AhS"/>
                         <outlet property="containerViewBottomConstraint" destination="R5t-7d-cPa" id="T79-Cl-YKN"/>
+                        <outlet property="mapView" destination="Ys6-Xt-3MB" id="NhL-0m-Ynx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -538,28 +539,47 @@
                                             <action selector="actionRate:" destination="DAs-iG-Eok" eventType="touchUpInside" id="tiM-AP-zsE"/>
                                         </connections>
                                     </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-HD-jwt">
-                                        <rect key="frame" x="88" y="167" width="166" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="162" id="M0v-Kg-i0n"/>
-                                            <constraint firstAttribute="height" constant="29" id="eSp-HX-aza"/>
-                                        </constraints>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avalie o serviço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-ek-iBF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avalie o serviço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-ek-iBF">
                                         <rect key="frame" x="111.66666666666669" y="122" width="119" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYe-wJ-hvo" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="45" y="166" width="253" height="59"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="Egd-Vf-G0E"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                <color key="value" red="1" green="0.31003492980000003" blue="0.47093604090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Jgr-fX-v27" firstAttribute="top" secondItem="xYe-wJ-hvo" secondAttribute="bottom" constant="28" id="27n-xB-Kgj"/>
                                     <constraint firstAttribute="height" constant="313" id="2rs-eB-IT3"/>
-                                    <constraint firstItem="jEh-HD-jwt" firstAttribute="centerX" secondItem="LIr-Uo-DHi" secondAttribute="centerX" id="2uY-4O-lz2"/>
-                                    <constraint firstItem="fhE-ek-iBF" firstAttribute="centerX" secondItem="jEh-HD-jwt" secondAttribute="centerX" id="4Gg-3C-zbg"/>
-                                    <constraint firstItem="jEh-HD-jwt" firstAttribute="top" secondItem="fhE-ek-iBF" secondAttribute="bottom" constant="24" id="7jd-qE-Gor"/>
                                     <constraint firstAttribute="trailing" secondItem="Jgr-fX-v27" secondAttribute="trailing" id="8gh-Oc-0ic"/>
-                                    <constraint firstItem="Jgr-fX-v27" firstAttribute="top" secondItem="jEh-HD-jwt" secondAttribute="bottom" constant="57" id="Ula-6m-nEH"/>
+                                    <constraint firstItem="xYe-wJ-hvo" firstAttribute="centerX" secondItem="LIr-Uo-DHi" secondAttribute="centerX" id="l2x-wC-gef"/>
                                     <constraint firstItem="Jgr-fX-v27" firstAttribute="leading" secondItem="LIr-Uo-DHi" secondAttribute="leading" id="p5b-of-GSI"/>
                                     <constraint firstAttribute="bottom" secondItem="Jgr-fX-v27" secondAttribute="bottom" id="rXx-a0-42a"/>
                                 </constraints>

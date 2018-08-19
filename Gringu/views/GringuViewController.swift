@@ -9,13 +9,24 @@
 import Foundation
 import UIKit
 import ReSwift
+import CoreLocation
+import MapKit
 
-class GringuViewController: UIViewController {
+class GringuViewController: UIViewController,
+    CLLocationManagerDelegate,
+    MKMapViewDelegate {
   
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet weak var mapView: MKMapView!
   
   private var activeViewController: UIViewController!
+  private let locationManager = CLLocationManager()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    centerUserLocation()
+  }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -25,6 +36,46 @@ class GringuViewController: UIViewController {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     mainStore.unsubscribe(self)
+  }
+}
+
+extension GringuViewController {
+  
+  private func centerUserLocation() {
+    self.locationManager.requestWhenInUseAuthorization()
+    
+    if CLLocationManager.locationServicesEnabled() {
+      locationManager.delegate = self
+      locationManager.desiredAccuracy = kCLLocationAccuracyBest
+      locationManager.startUpdatingLocation()
+    }
+    
+    mapView.delegate = self
+    mapView.mapType = .standard
+    mapView.isZoomEnabled = true
+    mapView.isScrollEnabled = true
+    
+    if let coor = mapView.userLocation.location?.coordinate{
+      mapView.setCenter(coor, animated: true)
+    }
+  }
+  
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+    
+    mapView.mapType = MKMapType.standard
+    
+    let span = MKCoordinateSpanMake(0.05, 0.05)
+    let region = MKCoordinateRegion(center: locValue, span: span)
+    mapView.setRegion(region, animated: true)
+    
+    let annotation = MKPointAnnotation()
+    annotation.coordinate = locValue
+    annotation.title = "Você!"
+    annotation.subtitle = "Localização atual"
+    mapView.addAnnotation(annotation)
+    
+    locationManager.stopUpdatingLocation()
   }
 }
 
