@@ -31,6 +31,8 @@
 		B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C922128E5B200808A68 /* GringuAssistant.swift */; };
 		B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C942128E5C400808A68 /* BaseModel.swift */; };
 		B01C7C992128F1A600808A68 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C982128F1A600808A68 /* Funcs.swift */; };
+		B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */; };
+		B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		B01C7C922128E5B200808A68 /* GringuAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuAssistant.swift; sourceTree = "<group>"; };
 		B01C7C942128E5C400808A68 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B01C7C982128F1A600808A68 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
+		B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealViewBoundsProvider.swift; sourceTree = "<group>"; };
+		B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearableDisappearable.swift; sourceTree = "<group>"; };
 		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,7 @@
 				B01C7C982128F1A600808A68 /* Funcs.swift */,
 				B01C7C6A2128BF0300808A68 /* assets */,
 				B01C7C862128E17700808A68 /* redux */,
+				B01C7C9A2128F71B00808A68 /* protocols */,
 				B01C7C692128BEF500808A68 /* model */,
 				B01C7C672128BEDC00808A68 /* views */,
 				B01C7C682128BEE200808A68 /* viewModel */,
@@ -260,6 +265,15 @@
 				B01C7C8C2128E1CF00808A68 /* Actions.swift */,
 			);
 			path = redux;
+			sourceTree = "<group>";
+		};
+		B01C7C9A2128F71B00808A68 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */,
+				B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 		F5276612BD53294CCD0EE0EA /* Pods */ = {
@@ -454,6 +468,8 @@
 				B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */,
 				B01C7C7F2128DC3C00808A68 /* ServiceInProgressViewController.swift in Sources */,
 				B01C7C882128E18B00808A68 /* State.swift in Sources */,
+				B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */,
+				B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */,
 				B01C7C832128DC6300808A68 /* PhotosFromSessionViewController.swift in Sources */,
 				B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */,
 				B01C7C992128F1A600808A68 /* Funcs.swift in Sources */,

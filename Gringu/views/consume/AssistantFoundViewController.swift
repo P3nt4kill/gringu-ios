@@ -17,4 +17,8 @@ class AssistantFoundViewController: UIViewController {
       mainStore.dispatch(ServiceStarted(startTime: Date()))
     }
   }
+  
+  func idealViewBounds(_ parentBounds: CGRect) -> CGRect {
+    return parentBounds
+  }
 }

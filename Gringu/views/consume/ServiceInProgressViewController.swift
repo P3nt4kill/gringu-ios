@@ -17,4 +17,8 @@ class ServiceInProgressViewController: UIViewController {
       mainStore.dispatch(ServiceEnded(endTime: Date()))
     }
   }
+  
+  func idealViewBounds(_ parentBounds: CGRect) -> CGRect {
+    return parentBounds
+  }
 }

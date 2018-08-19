@@ -16,4 +16,8 @@ class RateAssistantViewController: UIViewController {
   @IBAction func actionRate(_ sender: UIButton) {
     mainStore.dispatch(AssistantEvaluated(score: 5)) // TODO
   }
+  
+  func idealViewBounds(_ parentBounds: CGRect) -> CGRect {
+    return parentBounds
+  }
 }

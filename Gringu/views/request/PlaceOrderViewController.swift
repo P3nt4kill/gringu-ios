@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PlaceOrderViewController: UIViewController {
+class PlaceOrderViewController: UIViewController, IdealViewBoundsProvider {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,5 +18,9 @@ class PlaceOrderViewController: UIViewController {
     DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
       mainStore.dispatch(AssistantFound(assistant: assistant))
     }
+  }
+  
+  func idealViewBounds(_ parentBounds: CGRect) -> CGRect {
+    return parentBounds
   }
 }

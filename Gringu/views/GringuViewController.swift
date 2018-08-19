@@ -13,7 +13,7 @@ import ReSwift
 class GringuViewController: UIViewController {
   
   @IBOutlet weak var containerView: UIView!
-  @IBOutlet weak var containerHeight: NSLayoutConstraint!
+  @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
   
   private var activeViewController: UIViewController!
   
@@ -34,6 +34,7 @@ extension GringuViewController {
     let nextViewController = createViewController("reviewOrder")
     displayContentController(content: nextViewController)
     activeViewController = nextViewController
+    hideContainerView({ _ in })
   }
   
   func placeOrderState(_ state: AppState) {
@@ -66,9 +67,34 @@ extension GringuViewController {
   
   func idleState(_ state: AppState) {
     hideContentController(content: activeViewController)
+    displayContainerView({ _ in })
   }
 }
 
+// MARK: -
+extension GringuViewController {
+  private func hideContainerView(_ completed: @escaping (Bool) -> Void) {
+    UIView.animate(
+      withDuration: 0.7,
+      animations: {
+        self.containerView.alpha = 0.4
+        self.bottomConstraint.constant = -200
+        self.view.layoutIfNeeded()
+      },
+      completion: completed)
+  }
+  private func displayContainerView(_ completed: @escaping (Bool) -> Void) {
+    UIView.animate(
+      withDuration: 0.5,
+      animations: {
+        self.containerView.alpha = 1
+        self.bottomConstraint.constant = 20
+      },
+      completion: completed)
+  }
+}
+
+// MARK: -
 extension GringuViewController: StoreSubscriber {
   typealias StoreSubscriberStateType = AppState
   
@@ -89,10 +115,25 @@ extension GringuViewController {
   func displayContentController(content: UIViewController) {
     addChildViewController(content)
     self.view.addSubview(content.view)
+    
+    if let vc = content as? IdealViewBoundsProvider {
+      content.view.frame = vc.idealViewBounds(self.view.frame)
+    }
+    if let vc = content as? Appearable {
+      vc.appear(from: self.view.frame, completion: { } )
+    }
   }
   
   func hideContentController(content: UIViewController) {
-    content.view.removeFromSuperview()
-    content.removeFromParentViewController()
+    if let vc = content as? Disappearable {
+      vc.disappear(from: self.view.frame) {
+        content.view.removeFromSuperview()
+        content.removeFromParentViewController()
+      }
+    }
+    else {
+      content.view.removeFromSuperview()
+      content.removeFromParentViewController()
+    }
   }
 }
