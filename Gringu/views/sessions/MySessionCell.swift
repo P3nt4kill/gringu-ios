@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AlamofireImage
+import SDWebImage
 
 class MySessionCell: UITableViewCell {
   
@@ -16,20 +16,9 @@ class MySessionCell: UITableViewCell {
   @IBOutlet weak var picture: UIImageView!
   @IBOutlet weak var label: UILabel!
   
-  var receipt: RequestReceipt?
-  
-  func configure(_ object: GringuPhoto) {
-    let downloader = ImageDownloader()
-    let urlRequest = URLRequest(url: URL(string: "https://httpbin.org/image/jpeg")!)
+  func configure(_ object: GringuSession) {
     
-    if receipt != nil {
-      downloader.cancelRequest(with: receipt!)
-    }
-    
-    receipt = downloader.download(urlRequest) { response in
-      if let image = response.result.value {
-        self.picture.image = image
-      }
-    }
+    label.text = object.name
+    picture.sd_setImage(with: URL(string: object.photos.first!.url)!, completed: nil)
   }
 }

@@ -7,4 +7,5 @@
 //
 
 struct GringuPhoto {
+  var url: String
 }

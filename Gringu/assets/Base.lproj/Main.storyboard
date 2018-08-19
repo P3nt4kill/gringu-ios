@@ -323,7 +323,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="4FF-ZD-bvY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -435,15 +435,15 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" red="0.1292857432" green="0.1285115771" blue="0.1300599093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MySessionCell" rowHeight="92" id="LuV-UQ-qnr" customClass="MySessionCell" customModule="Gringu" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MySessionCell" rowHeight="100" id="LuV-UQ-qnr" customClass="MySessionCell" customModule="Gringu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LuV-UQ-qnr" id="weE-5I-aBb">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="92"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-24-Az5">
-                                                    <rect key="frame" x="93" y="35.666666666666664" width="232" height="21"/>
+                                                    <rect key="frame" x="93" y="39.666666666666664" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Tfa-AJ-9dq"/>
                                                     </constraints>
@@ -452,7 +452,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zrW-PT-bja" customClass="RoundedElevatedImage" customModule="Gringu" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="16" width="60" height="60"/>
+                                                    <rect key="frame" x="16" y="20" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="AzO-e6-QTZ"/>
                                                         <constraint firstAttribute="height" constant="60" id="lg6-rG-Ayq"/>
@@ -468,12 +468,17 @@
                                                 <constraint firstItem="Kg6-24-Az5" firstAttribute="centerY" secondItem="weE-5I-aBb" secondAttribute="centerY" id="id0-Xb-XSe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="label" destination="Kg6-24-Az5" id="5qq-1j-3Ee"/>
                                             <outlet property="picture" destination="zrW-PT-bja" id="prN-aZ-8vU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SJg-mO-htz" id="UZM-o2-7Iu"/>
+                                    <outlet property="delegate" destination="SJg-mO-htz" id="FZY-TT-ikh"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.1292857432" green="0.1285115771" blue="0.1300599093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -497,7 +502,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="bA2-eK-tOB" kind="show" id="evA-MR-T1n"/>
+                        <segue destination="bA2-eK-tOB" kind="show" identifier="toPhotos" id="evA-MR-T1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXE-fO-neS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -587,7 +592,7 @@
                                             <constraint firstAttribute="height" constant="80" id="Ske-qK-jzb"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-1m-a3q" customClass="RoundedImage" customModule="Gringu" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="71" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-1m-a3q" customClass="RoundedImage" customModule="Gringu" customModuleProvider="target">
                                         <rect key="frame" x="71" y="60" width="80" height="80"/>
                                         <color key="backgroundColor" red="1" green="0.31003492980000003" blue="0.47093604090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -595,8 +600,8 @@
                                             <constraint firstAttribute="width" constant="80" id="r91-Sb-hkW"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fulano de tal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J22-VK-cxP">
-                                        <rect key="frame" x="159" y="89.666666666666629" width="166" height="22.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitor Silva Alves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J22-VK-cxP">
+                                        <rect key="frame" x="159" y="88.666666666666629" width="166" height="23"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -681,7 +686,7 @@
                                             <constraint firstAttribute="height" constant="80" id="kZe-6C-lGG"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RMo-62-4c8" customClass="RoundedImage" customModule="Gringu" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="71" translatesAutoresizingMaskIntoConstraints="NO" id="RMo-62-4c8" customClass="RoundedImage" customModule="Gringu" customModuleProvider="target">
                                         <rect key="frame" x="71" y="60" width="80" height="80"/>
                                         <color key="backgroundColor" red="1" green="0.31003492980000003" blue="0.47093604090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -689,8 +694,8 @@
                                             <constraint firstAttribute="height" constant="80" id="mXf-Ni-7Ee"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto de ajuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZI-3Q-XcW">
-                                        <rect key="frame" x="159" y="89.666666666666629" width="166" height="22.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitor Silva Alves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZI-3Q-XcW">
+                                        <rect key="frame" x="159" y="88.666666666666629" width="166" height="23"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -708,15 +713,11 @@
                                     <constraint firstItem="3ZI-3Q-XcW" firstAttribute="centerY" secondItem="YaU-Fr-beM" secondAttribute="centerY" id="sow-Je-Y0u"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-ld-LT7">
-                                <rect key="frame" x="80" y="233.66666666666663" width="182" height="60"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempo decorrido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBr-Wo-Xjz">
-                                <rect key="frame" x="106.33333333333333" y="293" width="129.33333333333337" height="22.333333333333314"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-ld-LT7">
+                                <rect key="frame" x="74.333333333333314" y="215.66666666666663" width="195" height="96"/>
+                                <string key="text">Serviço em 
+andamento</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -726,8 +727,6 @@
                             <constraint firstItem="YaU-Fr-beM" firstAttribute="trailing" secondItem="C2n-m8-UCK" secondAttribute="trailing" id="FuD-ou-PQI"/>
                             <constraint firstItem="Gi9-ld-LT7" firstAttribute="centerX" secondItem="c52-Hx-vWd" secondAttribute="centerX" id="RTT-B3-EE4"/>
                             <constraint firstAttribute="bottom" secondItem="YaU-Fr-beM" secondAttribute="bottom" id="acT-F6-neu"/>
-                            <constraint firstItem="NBr-Wo-Xjz" firstAttribute="centerX" secondItem="Gi9-ld-LT7" secondAttribute="centerX" id="hGY-IJ-pQY"/>
-                            <constraint firstItem="NBr-Wo-Xjz" firstAttribute="top" secondItem="Gi9-ld-LT7" secondAttribute="bottom" constant="-0.66666666666662877" id="pgY-8x-baC"/>
                             <constraint firstItem="YaU-Fr-beM" firstAttribute="leading" secondItem="C2n-m8-UCK" secondAttribute="leading" id="pjS-hN-b2b"/>
                             <constraint firstItem="Gi9-ld-LT7" firstAttribute="centerY" secondItem="c52-Hx-vWd" secondAttribute="centerY" constant="-70" id="tYq-Yu-3T7"/>
                         </constraints>
@@ -754,35 +753,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="0.1292857432" green="0.1285115771" blue="0.1300599093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="SJu-rt-PGn">
-                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="itemSize" width="160" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyPictureCell" id="6dh-Gt-eKm" customClass="MyPictureCell" customModule="Gringu" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="150" height="150"/>
+                                        <rect key="frame" x="16" y="16" width="160" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="63W-O4-t7w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="63W-O4-t7w" customClass="ElevatedImage" customModule="Gringu" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="0.0" width="140" height="135"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="63W-O4-t7w" firstAttribute="leading" secondItem="6dh-Gt-eKm" secondAttribute="leading" id="0oX-II-sRV"/>
-                                            <constraint firstAttribute="bottom" secondItem="63W-O4-t7w" secondAttribute="bottom" id="8T9-gR-JDP"/>
+                                            <constraint firstItem="63W-O4-t7w" firstAttribute="leading" secondItem="6dh-Gt-eKm" secondAttribute="leading" constant="10" id="0oX-II-sRV"/>
+                                            <constraint firstAttribute="bottom" secondItem="63W-O4-t7w" secondAttribute="bottom" constant="15" id="8T9-gR-JDP"/>
                                             <constraint firstItem="63W-O4-t7w" firstAttribute="top" secondItem="6dh-Gt-eKm" secondAttribute="top" id="8np-jo-gQ5"/>
-                                            <constraint firstAttribute="trailing" secondItem="63W-O4-t7w" secondAttribute="trailing" id="oS3-nJ-Bii"/>
+                                            <constraint firstAttribute="trailing" secondItem="63W-O4-t7w" secondAttribute="trailing" constant="10" id="oS3-nJ-Bii"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="picture" destination="63W-O4-t7w" id="Xx0-Mu-UvO"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="bA2-eK-tOB" id="fZL-Ib-pPg"/>
+                                    <outlet property="delegate" destination="bA2-eK-tOB" id="RlT-9n-ESd"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -889,7 +892,7 @@
                                     <constraint firstAttribute="height" constant="80" id="w9P-Cp-OCS"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0R3-Za-zrS" customClass="RoundedElevatedImage" customModule="Gringu" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="71" translatesAutoresizingMaskIntoConstraints="NO" id="0R3-Za-zrS" customClass="RoundedElevatedImage" customModule="Gringu" customModuleProvider="target">
                                 <rect key="frame" x="161.66666666666666" y="293" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.31003492980000003" blue="0.47093604090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -925,6 +928,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="71" width="64" height="64"/>
         <image name="action" width="90" height="90"/>
         <image name="cam" width="90" height="90"/>
         <image name="guide" width="90" height="90"/>

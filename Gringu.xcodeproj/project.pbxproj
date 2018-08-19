@@ -39,12 +39,10 @@
 		B09D624B2129606500517662 /* MyPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624A2129606500517662 /* MyPictureCell.swift */; };
 		B09D624D2129606C00517662 /* MySessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624C2129606C00517662 /* MySessionCell.swift */; };
 		B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62512129623100517662 /* LastSessionsViewModel.swift */; };
-		B09D62542129623C00517662 /* PhotosFromSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */; };
 		B09D62562129624900517662 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62552129624900517662 /* BaseViewModel.swift */; };
 		B09D62582129650700517662 /* GringuSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62572129650700517662 /* GringuSession.swift */; };
 		B09D625A2129651200517662 /* GringuPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62592129651200517662 /* GringuPhoto.swift */; };
 		B09D625C21296AD500517662 /* GringuAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D625B21296AD500517662 /* GringuAnnotation.swift */; };
-		B09D625E21296C0800517662 /* GringuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D625D21296C0800517662 /* GringuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,12 +102,10 @@
 		B09D624A2129606500517662 /* MyPictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPictureCell.swift; sourceTree = "<group>"; };
 		B09D624C2129606C00517662 /* MySessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySessionCell.swift; sourceTree = "<group>"; };
 		B09D62512129623100517662 /* LastSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSessionsViewModel.swift; sourceTree = "<group>"; };
-		B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFromSessionViewModel.swift; sourceTree = "<group>"; };
 		B09D62552129624900517662 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B09D62572129650700517662 /* GringuSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuSession.swift; sourceTree = "<group>"; };
 		B09D62592129651200517662 /* GringuPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuPhoto.swift; sourceTree = "<group>"; };
 		B09D625B21296AD500517662 /* GringuAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuAnnotation.swift; sourceTree = "<group>"; };
-		B09D625D21296C0800517662 /* GringuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuViewModel.swift; sourceTree = "<group>"; };
 		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -312,10 +308,8 @@
 		B09D624E212961FF00517662 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B09D625D21296C0800517662 /* GringuViewModel.swift */,
 				B09D62552129624900517662 /* BaseViewModel.swift */,
 				B09D62512129623100517662 /* LastSessionsViewModel.swift */,
-				B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -466,16 +460,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Gringu/Pods-Gringu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,7 +509,6 @@
 				B01C7C6C2128BFFB00808A68 /* GringuViewController.swift in Sources */,
 				B01C7C8A2128E1A400808A68 /* Reducer.swift in Sources */,
 				B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */,
-				B09D625E21296C0800517662 /* GringuViewModel.swift in Sources */,
 				B09D624D2129606C00517662 /* MySessionCell.swift in Sources */,
 				B01C7C7F2128DC3C00808A68 /* ServiceInProgressViewController.swift in Sources */,
 				B09D625A2129651200517662 /* GringuPhoto.swift in Sources */,
@@ -530,7 +523,6 @@
 				B09D624B2129606500517662 /* MyPictureCell.swift in Sources */,
 				B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */,
 				B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */,
-				B09D62542129623C00517662 /* PhotosFromSessionViewModel.swift in Sources */,
 				B012194D212925D800B6AD55 /* RoundButton.swift in Sources */,
 				B09D62562129624900517662 /* BaseViewModel.swift in Sources */,
 				B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */,

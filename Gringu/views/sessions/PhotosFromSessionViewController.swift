@@ -9,7 +9,17 @@
 import Foundation
 import UIKit
 
-class PhotosFromSessionViewController: UIViewController {
+class PhotosFromSessionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+  var photos: [GringuPhoto]!
   
-  var viewModel = PhotosFromSessionViewModel()
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPictureCell.identifier, for: indexPath) as! MyPictureCell
+    cell.configure(photos[indexPath.row])
+    return cell
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return photos.count
+  }
 }

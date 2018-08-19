@@ -88,14 +88,21 @@ class ReviewOrderViewController: UIViewController,
   func newState(state: AppState) {
     guard let service = state.service else { return }
     
-    switch state.service! {
+    switch service {
     case .pop: typeIcon.image = UIImage(named: "iphone")
+               quotePrice.text = "R$ 8,59"
     case .x: typeIcon.image = UIImage(named: "cam")
+              quotePrice.text = "R$ 12,12"
     case .pro: typeIcon.image = UIImage(named: "pro")
+              quotePrice.text = "R$ 25,60"
     case .action: typeIcon.image = UIImage(named: "action")
+              quotePrice.text = "R$ 30,10"
     case .translate: typeIcon.image = UIImage(named: "translate")
+              quotePrice.text = "R$ 19,90"
     case .recharge: typeIcon.image = UIImage(named: "recharge")
+              quotePrice.text = "R$ 5,90"
     case .guide: typeIcon.image = UIImage(named: "guide")
+              quotePrice.text = "R$ 35,00"
     }
   }
 }

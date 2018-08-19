@@ -7,4 +7,6 @@
 //
 
 struct GringuSession {
+  var name = ""
+  var photos = [GringuPhoto]()
 }
