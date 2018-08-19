@@ -86,11 +86,16 @@ class ReviewOrderViewController: UIViewController,
   }
   
   func newState(state: AppState) {
+    guard let service = state.service else { return }
+    
     switch state.service! {
     case .pop: typeIcon.image = UIImage(named: "iphone")
     case .x: typeIcon.image = UIImage(named: "cam")
     case .pro: typeIcon.image = UIImage(named: "pro")
     case .action: typeIcon.image = UIImage(named: "action")
+    case .translate: typeIcon.image = UIImage(named: "translate")
+    case .recharge: typeIcon.image = UIImage(named: "recharge")
+    case .guide: typeIcon.image = UIImage(named: "guide")
     }
   }
 }

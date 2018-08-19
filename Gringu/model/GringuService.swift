@@ -13,4 +13,7 @@ enum GringuService: BaseModel {
   case x
   case pro
   case action
+  case translate
+  case recharge
+  case guide
 }

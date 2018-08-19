@@ -58,6 +58,9 @@ class RateAssistantViewController: UIViewController,
     case .x: typeIcon.image = UIImage(named: "cam")
     case .pro: typeIcon.image = UIImage(named: "pro")
     case .action: typeIcon.image = UIImage(named: "action")
+    case .translate: typeIcon.image = UIImage(named: "translate")
+    case .recharge: typeIcon.image = UIImage(named: "recharge")
+    case .guide: typeIcon.image = UIImage(named: "guide")
     }
   }
 }

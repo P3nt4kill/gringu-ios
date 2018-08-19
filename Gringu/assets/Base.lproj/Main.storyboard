@@ -75,17 +75,17 @@
             <objects>
                 <viewController id="R68-Lz-BK5" customClass="SelectServiceViewController" customModule="Gringu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2C-Hh-sH3">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXI-hJ-hxo">
-                                <rect key="frame" x="0.0" y="0.0" width="500" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="900" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LN5-ie-c94">
-                                        <rect key="frame" x="0.0" y="0.0" width="540" height="180"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="870" height="180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zth-s3-YwY" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="30" width="90" height="90"/>
+                                                <rect key="frame" x="150" y="30" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="BNd-nQ-RRs"/>
                                                     <constraint firstAttribute="width" constant="90" id="mh2-Wi-HZQ"/>
@@ -96,7 +96,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY8-4v-5h3" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
-                                                <rect key="frame" x="290" y="30" width="90" height="90"/>
+                                                <rect key="frame" x="270" y="30" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="8hh-3a-RPp"/>
                                                     <constraint firstAttribute="height" constant="90" id="F5H-oS-95w"/>
@@ -118,7 +118,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxW-6V-SEd" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
-                                                <rect key="frame" x="420" y="30" width="90" height="90"/>
+                                                <rect key="frame" x="390" y="30" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="UX2-dg-Raw"/>
                                                     <constraint firstAttribute="width" constant="90" id="jyp-M5-ENe"/>
@@ -135,7 +135,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGb-ww-xJh">
-                                                <rect key="frame" x="318.66666666666669" y="130" width="37" height="23"/>
+                                                <rect key="frame" x="298.66666666666669" y="130" width="37" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="37" id="A43-5W-kvR"/>
                                                     <constraint firstAttribute="height" constant="23" id="MdA-kh-GZo"/>
@@ -145,15 +145,66 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTION!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEq-co-cFv">
-                                                <rect key="frame" x="429" y="130" width="71" height="23"/>
+                                                <rect key="frame" x="399" y="130" width="71" height="23"/>
                                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBw-hX-WBZ" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
+                                                <rect key="frame" x="630" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="1Yx-rV-Fkw"/>
+                                                    <constraint firstAttribute="height" constant="90" id="m5I-jF-TdZ"/>
+                                                </constraints>
+                                                <state key="normal" image="recharge"/>
+                                                <connections>
+                                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="upc-zg-2Wn"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECHARGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyw-cO-8W2">
+                                                <rect key="frame" x="637" y="130" width="77" height="22"/>
+                                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eix-zN-Zh3" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
+                                                <rect key="frame" x="750" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="4OH-eq-xYa"/>
+                                                    <constraint firstAttribute="width" constant="90" id="NCA-qw-GIn"/>
+                                                </constraints>
+                                                <state key="normal" image="guide"/>
+                                                <connections>
+                                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="8QG-dS-K7r"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5n-as-nE8">
+                                                <rect key="frame" x="768" y="129" width="54" height="23"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGICAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-Bh-F1V">
-                                                <rect key="frame" x="172" y="130" width="66" height="22"/>
+                                                <rect key="frame" x="162" y="130" width="66" height="22"/>
                                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.31003492980000003" blue="0.47093604090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62u-W6-bhg" customClass="RoundedButton" customModule="Gringu" customModuleProvider="target">
+                                                <rect key="frame" x="510" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="0xb-oc-l6j"/>
+                                                    <constraint firstAttribute="width" constant="90" id="lXe-n6-8l2"/>
+                                                </constraints>
+                                                <state key="normal" image="translate"/>
+                                                <connections>
+                                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="BsI-Vj-RvR"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRANSLATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sR9-Nv-hWL">
+                                                <rect key="frame" x="508" y="130" width="94" height="23"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -161,20 +212,32 @@
                                         <constraints>
                                             <constraint firstItem="2gb-Bh-F1V" firstAttribute="centerX" secondItem="zth-s3-YwY" secondAttribute="centerX" id="0Nu-Yi-c7y"/>
                                             <constraint firstItem="xxW-6V-SEd" firstAttribute="top" secondItem="aY8-4v-5h3" secondAttribute="top" id="0V1-xc-SmA"/>
+                                            <constraint firstItem="Q5n-as-nE8" firstAttribute="top" secondItem="Eix-zN-Zh3" secondAttribute="bottom" constant="9" id="0e5-52-A1c"/>
                                             <constraint firstItem="r3y-Nw-7yX" firstAttribute="centerX" secondItem="lJP-WM-WKl" secondAttribute="centerX" id="21R-WV-bRh"/>
                                             <constraint firstItem="hEq-co-cFv" firstAttribute="top" secondItem="xxW-6V-SEd" secondAttribute="bottom" constant="10" id="2kF-iJ-RnX"/>
+                                            <constraint firstItem="sR9-Nv-hWL" firstAttribute="centerX" secondItem="62u-W6-bhg" secondAttribute="centerX" id="3vk-s7-cwh"/>
+                                            <constraint firstItem="aBw-hX-WBZ" firstAttribute="leading" secondItem="62u-W6-bhg" secondAttribute="trailing" constant="30" id="5fm-ry-brv"/>
+                                            <constraint firstItem="aBw-hX-WBZ" firstAttribute="top" secondItem="62u-W6-bhg" secondAttribute="top" id="7zW-ph-OgV"/>
                                             <constraint firstItem="XGb-ww-xJh" firstAttribute="centerX" secondItem="aY8-4v-5h3" secondAttribute="centerX" constant="2" id="9Y3-HL-t1e"/>
+                                            <constraint firstItem="sR9-Nv-hWL" firstAttribute="top" secondItem="62u-W6-bhg" secondAttribute="bottom" constant="10" id="Hde-kK-eXY"/>
                                             <constraint firstItem="2gb-Bh-F1V" firstAttribute="top" secondItem="zth-s3-YwY" secondAttribute="bottom" constant="10" id="NDE-7C-YbR"/>
                                             <constraint firstItem="lJP-WM-WKl" firstAttribute="top" secondItem="LN5-ie-c94" secondAttribute="top" constant="30" id="Rq8-v3-9yV"/>
-                                            <constraint firstItem="aY8-4v-5h3" firstAttribute="leading" secondItem="zth-s3-YwY" secondAttribute="trailing" constant="40" id="TuT-BN-ERD"/>
+                                            <constraint firstItem="aY8-4v-5h3" firstAttribute="leading" secondItem="zth-s3-YwY" secondAttribute="trailing" constant="30" id="TuT-BN-ERD"/>
                                             <constraint firstItem="aY8-4v-5h3" firstAttribute="top" secondItem="zth-s3-YwY" secondAttribute="top" id="WGL-pP-XWm"/>
                                             <constraint firstItem="zth-s3-YwY" firstAttribute="top" secondItem="lJP-WM-WKl" secondAttribute="top" id="XII-7e-2fz"/>
-                                            <constraint firstAttribute="trailing" secondItem="xxW-6V-SEd" secondAttribute="trailing" constant="30" id="Xg1-aL-hyl"/>
+                                            <constraint firstItem="cyw-cO-8W2" firstAttribute="top" secondItem="aBw-hX-WBZ" secondAttribute="bottom" constant="10" id="XwA-U9-E1t"/>
                                             <constraint firstItem="hEq-co-cFv" firstAttribute="centerX" secondItem="xxW-6V-SEd" secondAttribute="centerX" id="aEK-zx-J7T"/>
+                                            <constraint firstItem="Eix-zN-Zh3" firstAttribute="top" secondItem="aBw-hX-WBZ" secondAttribute="top" id="b9V-QD-jH0"/>
+                                            <constraint firstItem="62u-W6-bhg" firstAttribute="top" secondItem="xxW-6V-SEd" secondAttribute="top" id="bva-6J-AKv"/>
                                             <constraint firstAttribute="height" constant="180" id="dEh-qn-hT6"/>
+                                            <constraint firstItem="cyw-cO-8W2" firstAttribute="centerX" secondItem="aBw-hX-WBZ" secondAttribute="centerX" id="dgv-AA-CCQ"/>
+                                            <constraint firstItem="Eix-zN-Zh3" firstAttribute="leading" secondItem="aBw-hX-WBZ" secondAttribute="trailing" constant="30" id="eli-9T-e6I"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eix-zN-Zh3" secondAttribute="trailing" constant="30" id="jwN-bC-oYP"/>
                                             <constraint firstItem="lJP-WM-WKl" firstAttribute="leading" secondItem="LN5-ie-c94" secondAttribute="leading" constant="30" id="keI-G0-Q8s"/>
-                                            <constraint firstItem="zth-s3-YwY" firstAttribute="leading" secondItem="lJP-WM-WKl" secondAttribute="trailing" constant="40" id="nmF-ij-1KI"/>
-                                            <constraint firstItem="xxW-6V-SEd" firstAttribute="leading" secondItem="aY8-4v-5h3" secondAttribute="trailing" constant="40" id="pP8-yW-8mW"/>
+                                            <constraint firstItem="Q5n-as-nE8" firstAttribute="centerX" secondItem="Eix-zN-Zh3" secondAttribute="centerX" id="l1E-fe-0Y1"/>
+                                            <constraint firstItem="62u-W6-bhg" firstAttribute="leading" secondItem="xxW-6V-SEd" secondAttribute="trailing" constant="30" id="nXy-g7-vb4"/>
+                                            <constraint firstItem="zth-s3-YwY" firstAttribute="leading" secondItem="lJP-WM-WKl" secondAttribute="trailing" constant="30" id="nmF-ij-1KI"/>
+                                            <constraint firstItem="xxW-6V-SEd" firstAttribute="leading" secondItem="aY8-4v-5h3" secondAttribute="trailing" constant="30" id="pP8-yW-8mW"/>
                                             <constraint firstItem="XGb-ww-xJh" firstAttribute="top" secondItem="aY8-4v-5h3" secondAttribute="bottom" constant="10" id="sA1-ml-dwU"/>
                                             <constraint firstItem="r3y-Nw-7yX" firstAttribute="top" secondItem="lJP-WM-WKl" secondAttribute="bottom" constant="10" id="uoj-hr-2v2"/>
                                         </constraints>
@@ -204,18 +267,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eLD-vs-6FO"/>
                     </view>
-                    <size key="freeformSize" width="500" height="180"/>
+                    <size key="freeformSize" width="900" height="180"/>
                     <connections>
                         <outlet property="buttonAction" destination="xxW-6V-SEd" id="qWN-TN-UwE"/>
+                        <outlet property="buttonGuide" destination="Eix-zN-Zh3" id="el0-cV-VOB"/>
                         <outlet property="buttonPop" destination="lJP-WM-WKl" id="Rf9-as-2BT"/>
                         <outlet property="buttonPro" destination="aY8-4v-5h3" id="Rjq-BD-A4o"/>
+                        <outlet property="buttonRecharge" destination="aBw-hX-WBZ" id="phl-Jo-Kbg"/>
+                        <outlet property="buttonTranslate" destination="62u-W6-bhg" id="h9H-zi-geh"/>
                         <outlet property="buttonX" destination="zth-s3-YwY" id="Gqs-WD-uFx"/>
                         <outlet property="scrollView" destination="qXI-hJ-hxo" id="ssU-YX-Qc7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqY-Mg-bWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-47"/>
+            <point key="canvasLocation" x="1358.4000000000001" y="-55.418719211822662"/>
         </scene>
         <!--Review Order View Controller-->
         <scene sceneID="2ru-pH-62f">
@@ -803,7 +869,10 @@
     <resources>
         <image name="action" width="90" height="90"/>
         <image name="cam" width="90" height="90"/>
+        <image name="guide" width="90" height="90"/>
         <image name="iphone" width="90" height="90"/>
         <image name="pro" width="90" height="90"/>
+        <image name="recharge" width="90" height="90"/>
+        <image name="translate" width="90" height="90"/>
     </resources>
 </document>
