@@ -33,6 +33,7 @@
 		B01C7C992128F1A600808A68 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C982128F1A600808A68 /* Funcs.swift */; };
 		B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */; };
 		B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */; };
+		B01C7CA22129064900808A68 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7CA12129064900808A68 /* ViewConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		B01C7C982128F1A600808A68 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
 		B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealViewBoundsProvider.swift; sourceTree = "<group>"; };
 		B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearableDisappearable.swift; sourceTree = "<group>"; };
+		B01C7CA12129064900808A68 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
 		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		B01C7C672128BEDC00808A68 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				B01C7CA12129064900808A68 /* ViewConfig.swift */,
 				B01C7C6B2128BFFB00808A68 /* GringuViewController.swift */,
 				B01C7C702128DB6300808A68 /* request */,
 				B01C7C722128DB7600808A68 /* consume */,
@@ -462,6 +465,7 @@
 				B01C7C912128E4B500808A68 /* GringuOrder.swift in Sources */,
 				B01C7C752128DBC100808A68 /* SelectServiceViewController.swift in Sources */,
 				B01C7C8F2128E49000808A68 /* GringuService.swift in Sources */,
+				B01C7CA22129064900808A68 /* ViewConfig.swift in Sources */,
 				B01C7C8D2128E1CF00808A68 /* Actions.swift in Sources */,
 				B01C7C6C2128BFFB00808A68 /* GringuViewController.swift in Sources */,
 				B01C7C8A2128E1A400808A68 /* Reducer.swift in Sources */,

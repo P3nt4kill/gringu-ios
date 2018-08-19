@@ -13,7 +13,7 @@ import ReSwift
 class GringuViewController: UIViewController {
   
   @IBOutlet weak var containerView: UIView!
-  @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+  @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
   
   private var activeViewController: UIViewController!
   
@@ -75,20 +75,20 @@ extension GringuViewController {
 extension GringuViewController {
   private func hideContainerView(_ completed: @escaping (Bool) -> Void) {
     UIView.animate(
-      withDuration: 0.7,
+      withDuration: ViewConfig.fadeInTimeSlow,
       animations: {
         self.containerView.alpha = 0.4
-        self.bottomConstraint.constant = -200
+        self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomHidden
         self.view.layoutIfNeeded()
       },
       completion: completed)
   }
   private func displayContainerView(_ completed: @escaping (Bool) -> Void) {
     UIView.animate(
-      withDuration: 0.5,
+      withDuration: ViewConfig.fadeOutTime,
       animations: {
         self.containerView.alpha = 1
-        self.bottomConstraint.constant = 20
+        self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomVisible
       },
       completion: completed)
   }

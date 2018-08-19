@@ -32,25 +32,19 @@ class ReviewOrderViewController: UIViewController,
     self.view.frame.origin.y = parentBounds.size.height
     
     UIView.animate(
-      withDuration: 0.5,
+      withDuration: ViewConfig.fadeInTime,
       animations: {
         self.view.alpha = 1
         self.view.frame.origin.y = parentBounds.size.height - self.view.frame.size.height
       },
-      completion: { finished in
-        if finished { completion() }
-      })
+      completion: { if $0 { completion() }})
   }
   
   func disappear(from parentBounds: CGRect, completion: @escaping () -> ()) {
     self.view.alpha = 1
     UIView.animate(
-      withDuration: 0.5,
-      animations: {
-        self.view.alpha = 0
-      },
-      completion: { finished in
-        if finished { completion() }
-    })
+      withDuration: ViewConfig.fadeOutTime,
+      animations: { self.view.alpha = 0 },
+      completion: { if $0 { completion() }})
   }
 }
