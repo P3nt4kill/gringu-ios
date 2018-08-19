@@ -18,6 +18,7 @@ class GringuViewController: UIViewController,
   
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet weak var menuLeadingConstraint: NSLayoutConstraint!
   @IBOutlet weak var mapView: MKMapView!
   
   private var activeViewController: UIViewController!
@@ -132,6 +133,7 @@ extension GringuViewController {
       withDuration: ViewConfig.fadeInTime,
       animations: {
         self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomVisible
+        self.menuLeadingConstraint.constant = ViewConfig.menuLeadingVisible
         self.view.layoutIfNeeded()
       },
       completion: { _ in })
@@ -142,6 +144,7 @@ extension GringuViewController {
       animations: {
         self.containerView.alpha = 0.4
         self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomHidden
+        self.menuLeadingConstraint.constant = ViewConfig.menuLeadingHidden
         self.view.layoutIfNeeded()
       },
       completion: completed)
@@ -152,6 +155,7 @@ extension GringuViewController {
       animations: {
         self.containerView.alpha = 1
         self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomVisible
+        self.menuLeadingConstraint.constant = ViewConfig.menuLeadingVisible
       },
       completion: completed)
   }

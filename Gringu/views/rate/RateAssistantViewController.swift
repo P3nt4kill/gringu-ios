@@ -8,11 +8,16 @@
 
 import Foundation
 import UIKit
+import ReSwift
 
 class RateAssistantViewController: UIViewController,
   Appearable,
-  Disappearable  {
+  Disappearable,
+  StoreSubscriber {
   
+  typealias StoreSubscriberStateType = AppState
+  
+  @IBOutlet weak var typeIcon: RoundedElevatedImage!
   @IBOutlet weak var buttonRate: UIButton!
   
   @IBAction func actionRate(_ sender: UIButton) {
@@ -33,5 +38,26 @@ class RateAssistantViewController: UIViewController,
       withDuration: ViewConfig.fadeOutTime,
       animations: { self.view.alpha = 0 },
       completion: { if $0 { completion() }})
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    mainStore.subscribe(self)
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    mainStore.unsubscribe(self)
+  }
+  
+  func newState(state: AppState) {
+    guard let service = state.service else { return }
+    
+    switch service {
+    case .pop: typeIcon.image = UIImage(named: "iphone")
+    case .x: typeIcon.image = UIImage(named: "cam")
+    case .pro: typeIcon.image = UIImage(named: "pro")
+    case .action: typeIcon.image = UIImage(named: "action")
+    }
   }
 }

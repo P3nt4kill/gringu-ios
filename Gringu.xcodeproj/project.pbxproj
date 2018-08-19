@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A011F859FC00470FD096167E /* Pods_Gringu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F814746C1418F734EF52B /* Pods_Gringu.framework */; };
+		B012194D212925D800B6AD55 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B012194C212925D800B6AD55 /* RoundButton.swift */; };
 		B013C73121290DF10091214A /* ElevatedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C73021290DF10091214A /* ElevatedContainer.swift */; };
 		B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C382128B88100808A68 /* AppDelegate.swift */; };
 		B01C7C3E2128B88100808A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01C7C3C2128B88100808A68 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		6F817036AF3BC58BF4FFEE0F /* Pods-Gringu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gringu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gringu/Pods-Gringu.release.xcconfig"; sourceTree = "<group>"; };
 		A437BEB00508A8C489F43E63 /* Pods-Gringu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gringu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gringu/Pods-Gringu.debug.xcconfig"; sourceTree = "<group>"; };
+		B012194C212925D800B6AD55 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		B013C73021290DF10091214A /* ElevatedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatedContainer.swift; sourceTree = "<group>"; };
 		B01C7C352128B88100808A68 /* Gringu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gringu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01C7C382128B88100808A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B013C73021290DF10091214A /* ElevatedContainer.swift */,
+				B012194C212925D800B6AD55 /* RoundButton.swift */,
 			);
 			path = fx;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				B01C7C992128F1A600808A68 /* Funcs.swift in Sources */,
 				B01C7C812128DC5300808A68 /* LastSessionsViewController.swift in Sources */,
 				B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */,
+				B012194D212925D800B6AD55 /* RoundButton.swift in Sources */,
 				B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */,
 				B01C7C7B2128DC0A00808A68 /* AssistantFoundViewController.swift in Sources */,
 				B013C73121290DF10091214A /* ElevatedContainer.swift in Sources */,

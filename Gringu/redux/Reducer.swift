@@ -33,7 +33,7 @@ func mainReducer(action: Action, state: AppState?) -> AppState {
     state.endTime = incoming.endTime
     state.journey = .serviceEnded
     
-  case _ as AssistantEvaluated:
+  case _ as GoBack, _ as AssistantEvaluated:
     state.assistant = nil
     state.endTime = nil
     state.startTime = nil

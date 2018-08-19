@@ -13,6 +13,8 @@ struct SelectedService: Action {
   let service: GringuService
 }
 
+struct GoBack: Action {}
+
 struct PlacedOrder: Action {
   let order: GringuOrder
 }

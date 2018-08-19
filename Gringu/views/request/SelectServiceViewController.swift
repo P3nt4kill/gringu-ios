@@ -15,6 +15,7 @@ class SelectServiceViewController: UIViewController {
   @IBOutlet weak var buttonX: UIButton!
   @IBOutlet weak var buttonPro: UIButton!
   @IBOutlet weak var buttonAction: UIButton!
+  @IBOutlet weak var scrollView: UIScrollView!
   
   @IBAction func actionSelectService(_ sender: Any) {
     switch (sender as! UIButton) {

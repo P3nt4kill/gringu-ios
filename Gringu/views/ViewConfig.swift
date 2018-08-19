@@ -17,4 +17,6 @@ struct ViewConfig {
   static let fadeOutTimeSlow = 0.75
   static let containerViewBottomVisible = CGFloat(20)
   static let containerViewBottomHidden = CGFloat(-200)
+  static let menuLeadingVisible = CGFloat(16)
+  static let menuLeadingHidden = CGFloat(-70)
 }

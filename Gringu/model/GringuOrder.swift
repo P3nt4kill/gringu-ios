@@ -10,8 +10,6 @@ import Foundation
 
 struct GringuOrder: BaseModel {
   let chargeType: ServiceChargeType
-  let amount: Int
-  let payment: String = "Visa" // TODO
 }
 
 enum ServiceChargeType {
