@@ -11,4 +11,5 @@ import UIKit
 
 class PhotosFromSessionViewController: UIViewController {
   
+  var viewModel = PhotosFromSessionViewModel()
 }

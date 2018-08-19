@@ -11,6 +11,8 @@ import UIKit
 
 class LastSessionsViewController: UIViewController {
   
+  var viewModel = LastSessionsViewModel()
+  
   @IBAction func actionDismiss(_ sender: Any) {
     self.dismiss(animated: true, completion: nil)
   }

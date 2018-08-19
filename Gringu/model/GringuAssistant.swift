@@ -9,4 +9,17 @@
 import Foundation
 
 struct GringuAssistant: BaseModel {
+  
+  var name: String!
+  var picture: String!
+  
+  init(){}
+  init(_ data: [AnyHashable: AnyObject]) {
+    name = data["nome"] as? String ?? ""
+    
+    if let imgs = data["imagens"] as? [[AnyHashable: AnyObject]],
+       let first = imgs.first {
+       picture = first["url"] as? String ?? ""
+    }
+  }
 }

@@ -6,7 +6,15 @@
 //  Copyright © 2018 P3NT4K1LL¡. All rights reserved.
 //
 
+import Alamofire
+
 class LastSessionsViewModel: BaseViewModel {
   
-  
+  func download() {
+    Alamofire
+    .request("...")
+    .responseJSON { dataResponse in
+      
+    }
+  }
 }

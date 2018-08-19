@@ -6,6 +6,7 @@ def shared_pods
     pod 'ReSwift'
     pod 'Cosmos'
     pod 'Alamofire'
+    pod 'AlamofireImage'
 end
 
 target 'Gringu' do

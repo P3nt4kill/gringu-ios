@@ -26,6 +26,7 @@ class GringuViewController: UIViewController,
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    mapView.delegate = self
     centerUserLocation()
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
       self.presentContainerViewFirstTime()
@@ -47,7 +48,34 @@ class GringuViewController: UIViewController,
   }
 }
 
+// MARK: -
 extension GringuViewController {
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    guard let annotation = annotation as? GringuAnnotation else {
+      return nil
+    }
+    
+    var dequedView = mapView.dequeueReusableAnnotationView(withIdentifier: GringuAnnotation.identifier)
+        as? MKMarkerAnnotationView
+    
+    if dequedView == nil {
+      dequedView = MKMarkerAnnotationView(annotation: annotation,
+                                          reuseIdentifier: GringuAnnotation.identifier)
+    }
+    
+    dequedView!.markerTintColor = UIColor.blue
+    dequedView!.clusteringIdentifier = GringuAnnotation.identifier
+    
+    return dequedView
+  }
+}
+
+// MARK: -
+extension GringuViewController {
+  
+  private func placeMarkers(_ markers: [MKAnnotation]) {
+    mapView.addAnnotations(markers)
+  }
   
   private func centerUserLocation() {
     self.locationManager.requestWhenInUseAuthorization()
