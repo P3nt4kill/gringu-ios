@@ -11,4 +11,7 @@ import UIKit
 
 class LastSessionsViewController: UIViewController {
   
+  @IBAction func actionDismiss(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
 }

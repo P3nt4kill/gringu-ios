@@ -36,6 +36,11 @@
 		B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */; };
 		B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */; };
 		B01C7CA22129064900808A68 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7CA12129064900808A68 /* ViewConfig.swift */; };
+		B09D624B2129606500517662 /* MyPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624A2129606500517662 /* MyPictureCell.swift */; };
+		B09D624D2129606C00517662 /* MySessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624C2129606C00517662 /* MySessionCell.swift */; };
+		B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62512129623100517662 /* LastSessionsViewModel.swift */; };
+		B09D62542129623C00517662 /* PhotosFromSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */; };
+		B09D62562129624900517662 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62552129624900517662 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +97,11 @@
 		B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealViewBoundsProvider.swift; sourceTree = "<group>"; };
 		B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearableDisappearable.swift; sourceTree = "<group>"; };
 		B01C7CA12129064900808A68 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		B09D624A2129606500517662 /* MyPictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPictureCell.swift; sourceTree = "<group>"; };
+		B09D624C2129606C00517662 /* MySessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySessionCell.swift; sourceTree = "<group>"; };
+		B09D62512129623100517662 /* LastSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSessionsViewModel.swift; sourceTree = "<group>"; };
+		B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFromSessionViewModel.swift; sourceTree = "<group>"; };
+		B09D62552129624900517662 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,8 +183,8 @@
 				B01C7C9A2128F71B00808A68 /* protocols */,
 				B01C7C692128BEF500808A68 /* model */,
 				B01C7C672128BEDC00808A68 /* views */,
+				B09D624E212961FF00517662 /* viewModel */,
 				B013C72F21290DC50091214A /* fx */,
-				B01C7C682128BEE200808A68 /* viewModel */,
 			);
 			path = Gringu;
 			sourceTree = "<group>";
@@ -208,13 +218,6 @@
 				B01C7C732128DB9800808A68 /* sessions */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		B01C7C682128BEE200808A68 /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = viewModel;
 			sourceTree = "<group>";
 		};
 		B01C7C692128BEF500808A68 /* model */ = {
@@ -270,6 +273,8 @@
 			children = (
 				B01C7C802128DC5300808A68 /* LastSessionsViewController.swift */,
 				B01C7C822128DC6300808A68 /* PhotosFromSessionViewController.swift */,
+				B09D624A2129606500517662 /* MyPictureCell.swift */,
+				B09D624C2129606C00517662 /* MySessionCell.swift */,
 			);
 			path = sessions;
 			sourceTree = "<group>";
@@ -291,6 +296,16 @@
 				B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		B09D624E212961FF00517662 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B09D62552129624900517662 /* BaseViewModel.swift */,
+				B09D62512129623100517662 /* LastSessionsViewModel.swift */,
+				B09D62532129623C00517662 /* PhotosFromSessionViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		F5276612BD53294CCD0EE0EA /* Pods */ = {
@@ -486,6 +501,7 @@
 				B01C7C6C2128BFFB00808A68 /* GringuViewController.swift in Sources */,
 				B01C7C8A2128E1A400808A68 /* Reducer.swift in Sources */,
 				B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */,
+				B09D624D2129606C00517662 /* MySessionCell.swift in Sources */,
 				B01C7C7F2128DC3C00808A68 /* ServiceInProgressViewController.swift in Sources */,
 				B01C7C882128E18B00808A68 /* State.swift in Sources */,
 				B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */,
@@ -494,8 +510,12 @@
 				B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */,
 				B01C7C992128F1A600808A68 /* Funcs.swift in Sources */,
 				B01C7C812128DC5300808A68 /* LastSessionsViewController.swift in Sources */,
+				B09D624B2129606500517662 /* MyPictureCell.swift in Sources */,
 				B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */,
+				B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */,
+				B09D62542129623C00517662 /* PhotosFromSessionViewModel.swift in Sources */,
 				B012194D212925D800B6AD55 /* RoundButton.swift in Sources */,
+				B09D62562129624900517662 /* BaseViewModel.swift in Sources */,
 				B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */,
 				B01C7C7B2128DC0A00808A68 /* AssistantFoundViewController.swift in Sources */,
 				B013C73121290DF10091214A /* ElevatedContainer.swift in Sources */,

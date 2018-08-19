@@ -27,19 +27,23 @@ class GringuViewController: UIViewController,
   override func viewDidLoad() {
     super.viewDidLoad()
     centerUserLocation()
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    mainStore.subscribe(self)
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
       self.presentContainerViewFirstTime()
     }
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    mainStore.subscribe(self)
+  }
+  
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     mainStore.unsubscribe(self)
+  }
+  
+  @IBAction func actionShowSessions(_ sender: Any) {
+    self.performSegue(withIdentifier: "toSessions", sender: nil)
   }
 }
 
