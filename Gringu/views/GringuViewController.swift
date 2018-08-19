@@ -13,6 +13,9 @@ import ReSwift
 class GringuViewController: UIViewController {
   
   @IBOutlet weak var containerView: UIView!
+  @IBOutlet weak var containerHeight: NSLayoutConstraint!
+  
+  private var activeViewController: UIViewController!
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -27,27 +30,42 @@ class GringuViewController: UIViewController {
 
 extension GringuViewController {
   
-  func idleState(_ state: AppState) {
-  }
-  
   func selectedServiceState(_ state: AppState) {
-    print("Service selected \(state.service)")
+    let nextViewController = createViewController("reviewOrder")
+    displayContentController(content: nextViewController)
+    activeViewController = nextViewController
   }
   
   func placeOrderState(_ state: AppState) {
-    
-  }
-  
-  func serviceInProgressState(_ state: AppState) {
-    
-  }
-  
-  func serviceEndedState(_ state: AppState) {
-    
+    let nextViewController = createViewController("placeOrder")
+    hideContentController(content: activeViewController)
+    displayContentController(content: nextViewController)
+    activeViewController = nextViewController
   }
   
   func waitingForAssistantState(_ state: AppState) {
-    
+    let nextViewController = createViewController("assistantFound")
+    hideContentController(content: activeViewController)
+    displayContentController(content: nextViewController)
+    activeViewController = nextViewController
+  }
+  
+  func serviceInProgressState(_ state: AppState) {
+    let nextViewController = createViewController("serviceInProgress")
+    hideContentController(content: activeViewController)
+    displayContentController(content: nextViewController)
+    activeViewController = nextViewController
+  }
+  
+  func serviceEndedState(_ state: AppState) {
+    let nextViewController = createViewController("rateAssistant")
+    hideContentController(content: activeViewController)
+    displayContentController(content: nextViewController)
+    activeViewController = nextViewController
+  }
+  
+  func idleState(_ state: AppState) {
+    hideContentController(content: activeViewController)
   }
 }
 
@@ -59,10 +77,22 @@ extension GringuViewController: StoreSubscriber {
     case .idle: idleState(state)
     case .selectedService: selectedServiceState(state)
     case .placedOrder: placeOrderState(state)
+    case .waitingForAssistant: waitingForAssistantState(state)
     case .serviceInProgress: serviceInProgressState(state)
     case .serviceEnded: serviceEndedState(state)
-    case .waitingForAssistant: waitingForAssistantState(state)
     default: break
     }
+  }
+}
+
+extension GringuViewController {
+  func displayContentController(content: UIViewController) {
+    addChildViewController(content)
+    self.view.addSubview(content.view)
+  }
+  
+  func hideContentController(content: UIViewController) {
+    content.view.removeFromSuperview()
+    content.removeFromParentViewController()
   }
 }

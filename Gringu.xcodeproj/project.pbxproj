@@ -30,6 +30,7 @@
 		B01C7C912128E4B500808A68 /* GringuOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C902128E4B500808A68 /* GringuOrder.swift */; };
 		B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C922128E5B200808A68 /* GringuAssistant.swift */; };
 		B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C942128E5C400808A68 /* BaseModel.swift */; };
+		B01C7C992128F1A600808A68 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C982128F1A600808A68 /* Funcs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		B01C7C902128E4B500808A68 /* GringuOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuOrder.swift; sourceTree = "<group>"; };
 		B01C7C922128E5B200808A68 /* GringuAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuAssistant.swift; sourceTree = "<group>"; };
 		B01C7C942128E5C400808A68 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B01C7C982128F1A600808A68 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
 		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 			children = (
 				B01C7C442128B88200808A68 /* Info.plist */,
 				B01C7C382128B88100808A68 /* AppDelegate.swift */,
+				B01C7C982128F1A600808A68 /* Funcs.swift */,
 				B01C7C6A2128BF0300808A68 /* assets */,
 				B01C7C862128E17700808A68 /* redux */,
 				B01C7C692128BEF500808A68 /* model */,
@@ -453,6 +456,7 @@
 				B01C7C882128E18B00808A68 /* State.swift in Sources */,
 				B01C7C832128DC6300808A68 /* PhotosFromSessionViewController.swift in Sources */,
 				B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */,
+				B01C7C992128F1A600808A68 /* Funcs.swift in Sources */,
 				B01C7C812128DC5300808A68 /* LastSessionsViewController.swift in Sources */,
 				B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */,
 				B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */,
