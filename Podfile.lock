@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Cosmos (16.0.0)
+  - ReSwift (4.0.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos
+  - ReSwift
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cosmos
+    - ReSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 1d14c8973897cc06f1453246a1d34ace74130548
+
+COCOAPODS: 1.5.3

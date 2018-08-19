@@ -7,13 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A011F859FC00470FD096167E /* Pods_Gringu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F814746C1418F734EF52B /* Pods_Gringu.framework */; };
+		B012194D212925D800B6AD55 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B012194C212925D800B6AD55 /* RoundButton.swift */; };
+		B013C73121290DF10091214A /* ElevatedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013C73021290DF10091214A /* ElevatedContainer.swift */; };
 		B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C382128B88100808A68 /* AppDelegate.swift */; };
-		B01C7C3B2128B88100808A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C3A2128B88100808A68 /* ViewController.swift */; };
 		B01C7C3E2128B88100808A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01C7C3C2128B88100808A68 /* Main.storyboard */; };
 		B01C7C402128B88200808A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01C7C3F2128B88200808A68 /* Assets.xcassets */; };
 		B01C7C432128B88200808A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01C7C412128B88200808A68 /* LaunchScreen.storyboard */; };
 		B01C7C4E2128B88200808A68 /* GringuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C4D2128B88200808A68 /* GringuTests.swift */; };
 		B01C7C592128B88200808A68 /* GringuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C582128B88200808A68 /* GringuUITests.swift */; };
+		B01C7C6C2128BFFB00808A68 /* GringuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C6B2128BFFB00808A68 /* GringuViewController.swift */; };
+		B01C7C752128DBC100808A68 /* SelectServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C742128DBC100808A68 /* SelectServiceViewController.swift */; };
+		B01C7C772128DBEB00808A68 /* ReviewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C762128DBEB00808A68 /* ReviewOrderViewController.swift */; };
+		B01C7C792128DBF400808A68 /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C782128DBF400808A68 /* PlaceOrderViewController.swift */; };
+		B01C7C7B2128DC0A00808A68 /* AssistantFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C7A2128DC0A00808A68 /* AssistantFoundViewController.swift */; };
+		B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C7C2128DC1D00808A68 /* RateAssistantViewController.swift */; };
+		B01C7C7F2128DC3C00808A68 /* ServiceInProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C7E2128DC3C00808A68 /* ServiceInProgressViewController.swift */; };
+		B01C7C812128DC5300808A68 /* LastSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C802128DC5300808A68 /* LastSessionsViewController.swift */; };
+		B01C7C832128DC6300808A68 /* PhotosFromSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C822128DC6300808A68 /* PhotosFromSessionViewController.swift */; };
+		B01C7C882128E18B00808A68 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C872128E18B00808A68 /* State.swift */; };
+		B01C7C8A2128E1A400808A68 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C892128E1A400808A68 /* Reducer.swift */; };
+		B01C7C8D2128E1CF00808A68 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C8C2128E1CF00808A68 /* Actions.swift */; };
+		B01C7C8F2128E49000808A68 /* GringuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C8E2128E49000808A68 /* GringuService.swift */; };
+		B01C7C912128E4B500808A68 /* GringuOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C902128E4B500808A68 /* GringuOrder.swift */; };
+		B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C922128E5B200808A68 /* GringuAssistant.swift */; };
+		B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C942128E5C400808A68 /* BaseModel.swift */; };
+		B01C7C992128F1A600808A68 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C982128F1A600808A68 /* Funcs.swift */; };
+		B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */; };
+		B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */; };
+		B01C7CA22129064900808A68 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C7CA12129064900808A68 /* ViewConfig.swift */; };
+		B09D624B2129606500517662 /* MyPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624A2129606500517662 /* MyPictureCell.swift */; };
+		B09D624D2129606C00517662 /* MySessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D624C2129606C00517662 /* MySessionCell.swift */; };
+		B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62512129623100517662 /* LastSessionsViewModel.swift */; };
+		B09D62562129624900517662 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62552129624900517662 /* BaseViewModel.swift */; };
+		B09D62582129650700517662 /* GringuSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62572129650700517662 /* GringuSession.swift */; };
+		B09D625A2129651200517662 /* GringuPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D62592129651200517662 /* GringuPhoto.swift */; };
+		B09D625C21296AD500517662 /* GringuAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D625B21296AD500517662 /* GringuAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +63,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F817036AF3BC58BF4FFEE0F /* Pods-Gringu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gringu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gringu/Pods-Gringu.release.xcconfig"; sourceTree = "<group>"; };
+		A437BEB00508A8C489F43E63 /* Pods-Gringu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gringu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gringu/Pods-Gringu.debug.xcconfig"; sourceTree = "<group>"; };
+		B012194C212925D800B6AD55 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		B013C73021290DF10091214A /* ElevatedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatedContainer.swift; sourceTree = "<group>"; };
 		B01C7C352128B88100808A68 /* Gringu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gringu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01C7C382128B88100808A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B01C7C3A2128B88100808A68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B01C7C3D2128B88100808A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B01C7C3F2128B88200808A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B01C7C422128B88200808A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,8 +77,36 @@
 		B01C7C4D2128B88200808A68 /* GringuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuTests.swift; sourceTree = "<group>"; };
 		B01C7C4F2128B88200808A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01C7C542128B88200808A68 /* GringuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GringuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B01C7C582128B88200808A68 /* GringuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuUITests.swift; sourceTree = "<group>"; };
+		B01C7C582128B88200808A68 /* GringuUITests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GringuUITests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B01C7C5A2128B88200808A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01C7C6B2128BFFB00808A68 /* GringuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuViewController.swift; sourceTree = "<group>"; };
+		B01C7C742128DBC100808A68 /* SelectServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceViewController.swift; sourceTree = "<group>"; };
+		B01C7C762128DBEB00808A68 /* ReviewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewOrderViewController.swift; sourceTree = "<group>"; };
+		B01C7C782128DBF400808A68 /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
+		B01C7C7A2128DC0A00808A68 /* AssistantFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantFoundViewController.swift; sourceTree = "<group>"; };
+		B01C7C7C2128DC1D00808A68 /* RateAssistantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAssistantViewController.swift; sourceTree = "<group>"; };
+		B01C7C7E2128DC3C00808A68 /* ServiceInProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInProgressViewController.swift; sourceTree = "<group>"; };
+		B01C7C802128DC5300808A68 /* LastSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSessionsViewController.swift; sourceTree = "<group>"; };
+		B01C7C822128DC6300808A68 /* PhotosFromSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosFromSessionViewController.swift; sourceTree = "<group>"; };
+		B01C7C872128E18B00808A68 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		B01C7C892128E1A400808A68 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		B01C7C8C2128E1CF00808A68 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		B01C7C8E2128E49000808A68 /* GringuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuService.swift; sourceTree = "<group>"; };
+		B01C7C902128E4B500808A68 /* GringuOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuOrder.swift; sourceTree = "<group>"; };
+		B01C7C922128E5B200808A68 /* GringuAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuAssistant.swift; sourceTree = "<group>"; };
+		B01C7C942128E5C400808A68 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B01C7C982128F1A600808A68 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
+		B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealViewBoundsProvider.swift; sourceTree = "<group>"; };
+		B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearableDisappearable.swift; sourceTree = "<group>"; };
+		B01C7CA12129064900808A68 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		B09D624A2129606500517662 /* MyPictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPictureCell.swift; sourceTree = "<group>"; };
+		B09D624C2129606C00517662 /* MySessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySessionCell.swift; sourceTree = "<group>"; };
+		B09D62512129623100517662 /* LastSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSessionsViewModel.swift; sourceTree = "<group>"; };
+		B09D62552129624900517662 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B09D62572129650700517662 /* GringuSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuSession.swift; sourceTree = "<group>"; };
+		B09D62592129651200517662 /* GringuPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuPhoto.swift; sourceTree = "<group>"; };
+		B09D625B21296AD500517662 /* GringuAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GringuAnnotation.swift; sourceTree = "<group>"; };
+		BA7F814746C1418F734EF52B /* Pods_Gringu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gringu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A011F859FC00470FD096167E /* Pods_Gringu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +135,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6B128C506A9B1F66E359C66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F814746C1418F734EF52B /* Pods_Gringu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B013C72F21290DC50091214A /* fx */ = {
+			isa = PBXGroup;
+			children = (
+				B013C73021290DF10091214A /* ElevatedContainer.swift */,
+				B012194C212925D800B6AD55 /* RoundButton.swift */,
+			);
+			path = fx;
+			sourceTree = "<group>";
+		};
 		B01C7C2C2128B88100808A68 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +159,12 @@
 				B01C7C4C2128B88200808A68 /* GringuTests */,
 				B01C7C572128B88200808A68 /* GringuUITests */,
 				B01C7C362128B88100808A68 /* Products */,
+				F5276612BD53294CCD0EE0EA /* Pods */,
+				A6B128C506A9B1F66E359C66 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		B01C7C362128B88100808A68 /* Products */ = {
 			isa = PBXGroup;
@@ -97,12 +179,16 @@
 		B01C7C372128B88100808A68 /* Gringu */ = {
 			isa = PBXGroup;
 			children = (
-				B01C7C382128B88100808A68 /* AppDelegate.swift */,
-				B01C7C3A2128B88100808A68 /* ViewController.swift */,
-				B01C7C3C2128B88100808A68 /* Main.storyboard */,
-				B01C7C3F2128B88200808A68 /* Assets.xcassets */,
-				B01C7C412128B88200808A68 /* LaunchScreen.storyboard */,
 				B01C7C442128B88200808A68 /* Info.plist */,
+				B01C7C382128B88100808A68 /* AppDelegate.swift */,
+				B01C7C982128F1A600808A68 /* Funcs.swift */,
+				B01C7C6A2128BF0300808A68 /* assets */,
+				B01C7C862128E17700808A68 /* redux */,
+				B01C7C9A2128F71B00808A68 /* protocols */,
+				B01C7C692128BEF500808A68 /* model */,
+				B01C7C672128BEDC00808A68 /* views */,
+				B09D624E212961FF00517662 /* viewModel */,
+				B013C72F21290DC50091214A /* fx */,
 			);
 			path = Gringu;
 			sourceTree = "<group>";
@@ -110,8 +196,8 @@
 		B01C7C4C2128B88200808A68 /* GringuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B01C7C4D2128B88200808A68 /* GringuTests.swift */,
 				B01C7C4F2128B88200808A68 /* Info.plist */,
+				B01C7C4D2128B88200808A68 /* GringuTests.swift */,
 			);
 			path = GringuTests;
 			sourceTree = "<group>";
@@ -119,10 +205,122 @@
 		B01C7C572128B88200808A68 /* GringuUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B01C7C582128B88200808A68 /* GringuUITests.swift */,
 				B01C7C5A2128B88200808A68 /* Info.plist */,
+				B01C7C582128B88200808A68 /* GringuUITests.swift */,
 			);
 			path = GringuUITests;
+			sourceTree = "<group>";
+		};
+		B01C7C672128BEDC00808A68 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7CA12129064900808A68 /* ViewConfig.swift */,
+				B01C7C6B2128BFFB00808A68 /* GringuViewController.swift */,
+				B01C7C702128DB6300808A68 /* request */,
+				B01C7C722128DB7600808A68 /* consume */,
+				B01C7C712128DB7000808A68 /* rate */,
+				B01C7C732128DB9800808A68 /* sessions */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B01C7C692128BEF500808A68 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C942128E5C400808A68 /* BaseModel.swift */,
+				B01C7C8E2128E49000808A68 /* GringuService.swift */,
+				B01C7C902128E4B500808A68 /* GringuOrder.swift */,
+				B01C7C922128E5B200808A68 /* GringuAssistant.swift */,
+				B09D62572129650700517662 /* GringuSession.swift */,
+				B09D62592129651200517662 /* GringuPhoto.swift */,
+				B09D625B21296AD500517662 /* GringuAnnotation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B01C7C6A2128BF0300808A68 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C412128B88200808A68 /* LaunchScreen.storyboard */,
+				B01C7C3C2128B88100808A68 /* Main.storyboard */,
+				B01C7C3F2128B88200808A68 /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		B01C7C702128DB6300808A68 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C742128DBC100808A68 /* SelectServiceViewController.swift */,
+				B01C7C762128DBEB00808A68 /* ReviewOrderViewController.swift */,
+				B01C7C782128DBF400808A68 /* PlaceOrderViewController.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B01C7C712128DB7000808A68 /* rate */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C7C2128DC1D00808A68 /* RateAssistantViewController.swift */,
+			);
+			path = rate;
+			sourceTree = "<group>";
+		};
+		B01C7C722128DB7600808A68 /* consume */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C7A2128DC0A00808A68 /* AssistantFoundViewController.swift */,
+				B01C7C7E2128DC3C00808A68 /* ServiceInProgressViewController.swift */,
+			);
+			path = consume;
+			sourceTree = "<group>";
+		};
+		B01C7C732128DB9800808A68 /* sessions */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C802128DC5300808A68 /* LastSessionsViewController.swift */,
+				B01C7C822128DC6300808A68 /* PhotosFromSessionViewController.swift */,
+				B09D624A2129606500517662 /* MyPictureCell.swift */,
+				B09D624C2129606C00517662 /* MySessionCell.swift */,
+			);
+			path = sessions;
+			sourceTree = "<group>";
+		};
+		B01C7C862128E17700808A68 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C872128E18B00808A68 /* State.swift */,
+				B01C7C892128E1A400808A68 /* Reducer.swift */,
+				B01C7C8C2128E1CF00808A68 /* Actions.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		B01C7C9A2128F71B00808A68 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B01C7C9B2128F76700808A68 /* IdealViewBoundsProvider.swift */,
+				B01C7C9D2128FB8000808A68 /* AppearableDisappearable.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B09D624E212961FF00517662 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B09D62552129624900517662 /* BaseViewModel.swift */,
+				B09D62512129623100517662 /* LastSessionsViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		F5276612BD53294CCD0EE0EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A437BEB00508A8C489F43E63 /* Pods-Gringu.debug.xcconfig */,
+				6F817036AF3BC58BF4FFEE0F /* Pods-Gringu.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B01C7C5D2128B88200808A68 /* Build configuration list for PBXNativeTarget "Gringu" */;
 			buildPhases = (
+				8DE80B2DABCDDD032CED67BD /* [CP] Check Pods Manifest.lock */,
 				B01C7C312128B88100808A68 /* Sources */,
 				B01C7C322128B88100808A68 /* Frameworks */,
 				B01C7C332128B88100808A68 /* Resources */,
+				34DCC82F1313907F91EB6E9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +451,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34DCC82F1313907F91EB6E9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gringu/Pods-Gringu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gringu/Pods-Gringu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE80B2DABCDDD032CED67BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gringu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B01C7C312128B88100808A68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01C7C3B2128B88100808A68 /* ViewController.swift in Sources */,
+				B01C7C912128E4B500808A68 /* GringuOrder.swift in Sources */,
+				B01C7C752128DBC100808A68 /* SelectServiceViewController.swift in Sources */,
+				B01C7C8F2128E49000808A68 /* GringuService.swift in Sources */,
+				B01C7CA22129064900808A68 /* ViewConfig.swift in Sources */,
+				B01C7C8D2128E1CF00808A68 /* Actions.swift in Sources */,
+				B01C7C6C2128BFFB00808A68 /* GringuViewController.swift in Sources */,
+				B01C7C8A2128E1A400808A68 /* Reducer.swift in Sources */,
+				B01C7C932128E5B200808A68 /* GringuAssistant.swift in Sources */,
+				B09D624D2129606C00517662 /* MySessionCell.swift in Sources */,
+				B01C7C7F2128DC3C00808A68 /* ServiceInProgressViewController.swift in Sources */,
+				B09D625A2129651200517662 /* GringuPhoto.swift in Sources */,
+				B01C7C882128E18B00808A68 /* State.swift in Sources */,
+				B01C7C9E2128FB8000808A68 /* AppearableDisappearable.swift in Sources */,
+				B09D62582129650700517662 /* GringuSession.swift in Sources */,
+				B01C7C9C2128F76700808A68 /* IdealViewBoundsProvider.swift in Sources */,
+				B01C7C832128DC6300808A68 /* PhotosFromSessionViewController.swift in Sources */,
+				B01C7C952128E5C400808A68 /* BaseModel.swift in Sources */,
+				B01C7C992128F1A600808A68 /* Funcs.swift in Sources */,
+				B01C7C812128DC5300808A68 /* LastSessionsViewController.swift in Sources */,
+				B09D624B2129606500517662 /* MyPictureCell.swift in Sources */,
 				B01C7C392128B88100808A68 /* AppDelegate.swift in Sources */,
+				B09D62522129623100517662 /* LastSessionsViewModel.swift in Sources */,
+				B012194D212925D800B6AD55 /* RoundButton.swift in Sources */,
+				B09D62562129624900517662 /* BaseViewModel.swift in Sources */,
+				B01C7C7D2128DC1D00808A68 /* RateAssistantViewController.swift in Sources */,
+				B01C7C7B2128DC0A00808A68 /* AssistantFoundViewController.swift in Sources */,
+				B013C73121290DF10091214A /* ElevatedContainer.swift in Sources */,
+				B09D625C21296AD500517662 /* GringuAnnotation.swift in Sources */,
+				B01C7C772128DBEB00808A68 /* ReviewOrderViewController.swift in Sources */,
+				B01C7C792128DBF400808A68 /* PlaceOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +701,7 @@
 		};
 		B01C7C5E2128B88200808A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A437BEB00508A8C489F43E63 /* Pods-Gringu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +720,7 @@
 		};
 		B01C7C5F2128B88200808A68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F817036AF3BC58BF4FFEE0F /* Pods-Gringu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

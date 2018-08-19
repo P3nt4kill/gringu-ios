@@ -31,9 +31,22 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>example.com</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+    </dict>
+  </dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -41,5 +54,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>This application requires location services to work</string>
+  
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>This application requires location services to work</string>
 </dict>
 </plist>
