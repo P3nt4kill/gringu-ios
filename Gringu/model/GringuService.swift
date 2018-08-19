@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct GringuService: BaseModel {
-  
+enum GringuService: BaseModel {
+  case pop
+  case x
+  case pro
+  case action
 }

@@ -11,4 +11,11 @@ import UIKit
 
 class AssistantFoundViewController: UIViewController {
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+      mainStore.dispatch(ServiceStarted(startTime: Date()))
+    }
+  }
 }

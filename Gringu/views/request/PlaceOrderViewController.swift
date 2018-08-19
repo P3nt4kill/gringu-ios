@@ -14,8 +14,9 @@ class PlaceOrderViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    let assistant = GringuAssistant()
     DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-      
+      mainStore.dispatch(AssistantFound(assistant: assistant))
     }
   }
 }

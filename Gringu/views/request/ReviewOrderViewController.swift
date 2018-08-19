@@ -14,6 +14,7 @@ class ReviewOrderViewController: UIViewController {
   @IBOutlet weak var buttonConfirm: UIButton!
   
   @IBAction func actionConfirmOrder(_ sender: UIButton) {
-    
+    let order = GringuOrder(chargeType: .byClicks, amount: 10) // TODO
+    mainStore.dispatch(PlacedOrder(order: order))
   }
 }

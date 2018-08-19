@@ -17,5 +17,18 @@ struct PlacedOrder: Action {
   let order: GringuOrder
 }
 
-struct AssistantFound: Action {}
-struct 
+struct AssistantFound: Action {
+  let assistant: GringuAssistant
+}
+
+struct ServiceStarted: Action {
+  let startTime: Date
+}
+
+struct ServiceEnded: Action {
+  let endTime: Date
+}
+
+struct AssistantEvaluated: Action {
+  let score: Int
+}

@@ -9,18 +9,39 @@
 import Foundation
 import ReSwift
 
-// the reducer is responsible for evolving the application state based
-// on the actions it receives
 func mainReducer(action: Action, state: AppState?) -> AppState {
   var state = state ?? AppState()
   
   switch action {
-  case _ as CounterActionIncrease:
-    state.counter += 1
-  case _ as CounterActionDecrease:
-    state.counter -= 1
-  default:
-    break
+  case let incoming as SelectedService:
+    state.service = incoming.service
+    state.journey = .selectedService
+    
+  case let incoming as PlacedOrder:
+    state.order = incoming.order
+    state.journey = .placedOrder
+    
+  case let incoming as AssistantFound:
+    state.assistant = incoming.assistant
+    state.journey = .waitingForAssistant
+    
+  case let incoming as ServiceStarted:
+    state.startTime = incoming.startTime
+    state.journey = .serviceInProgress
+    
+  case let incoming as ServiceEnded:
+    state.endTime = incoming.endTime
+    state.journey = .serviceEnded
+    
+  case _ as AssistantEvaluated:
+    state.assistant = nil
+    state.endTime = nil
+    state.startTime = nil
+    state.order = nil
+    state.service = nil
+    state.journey = .idle
+    
+  default: break
   }
   
   return state

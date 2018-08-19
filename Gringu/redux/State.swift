@@ -11,9 +11,20 @@ import ReSwift
 
 struct AppState: StateType {
   
+  var journey = GringuJourneyMoment.initial
   var service: GringuService?
   var order: GringuOrder?
   var assistant: GringuAssistant?
-  var taskStartTime: Date?
-  var taskEndTime: Date?
+  var startTime: Date?
+  var endTime: Date?
+}
+
+enum GringuJourneyMoment {
+  case initial
+  case idle
+  case selectedService
+  case placedOrder
+  case waitingForAssistant
+  case serviceInProgress
+  case serviceEnded
 }

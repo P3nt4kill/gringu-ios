@@ -16,7 +16,13 @@ class SelectServiceViewController: UIViewController {
   @IBOutlet weak var buttonPro: UIButton!
   @IBOutlet weak var buttonAction: UIButton!
   
-  @IBAction func actionSelectService(_ sender: UIButton) {
-    
+  @IBAction func actionSelectService(_ sender: Any) {
+    switch (sender as! UIButton) {
+    case buttonPop:    mainStore.dispatch(SelectedService(service: .pop))
+    case buttonX:      mainStore.dispatch(SelectedService(service: .x))
+    case buttonPro:    mainStore.dispatch(SelectedService(service: .pro))
+    case buttonAction: mainStore.dispatch(SelectedService(service: .action))
+    default: break
+    }
   }
 }

@@ -66,7 +66,7 @@
                                 <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="POP"/>
                                 <connections>
-                                    <action selector="actionSelectServiceWithSender:" destination="R68-Lz-BK5" eventType="touchUpInside" id="7ww-fZ-aGi"/>
+                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="PKX-wd-CE1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zth-s3-YwY">
@@ -75,7 +75,7 @@
                                 <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="X"/>
                                 <connections>
-                                    <action selector="actionSelectServiceWithSender:" destination="R68-Lz-BK5" eventType="touchUpInside" id="LcR-r2-pAV"/>
+                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="kFX-xd-FQJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY8-4v-5h3">
@@ -84,7 +84,7 @@
                                 <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="PRO"/>
                                 <connections>
-                                    <action selector="actionSelectServiceWithSender:" destination="R68-Lz-BK5" eventType="touchUpInside" id="7fi-pc-uho"/>
+                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="9R1-px-UnA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxW-6V-SEd">
@@ -93,7 +93,7 @@
                                 <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="ACTION"/>
                                 <connections>
-                                    <action selector="actionSelectServiceWithSender:" destination="R68-Lz-BK5" eventType="touchUpInside" id="o1X-yU-bCM"/>
+                                    <action selector="actionSelectService:" destination="R68-Lz-BK5" eventType="touchUpInside" id="nmM-nJ-T3V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,6 +158,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <action selector="actionConfirmOrder:" destination="ThE-Xg-Piv" eventType="touchUpInside" id="icS-VE-7nN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rN-oq-z6Q">
                                 <rect key="frame" x="155" y="183" width="33" height="21"/>
@@ -171,6 +174,9 @@
                         <viewLayoutGuide key="safeArea" id="X6G-0E-eWF"/>
                     </view>
                     <size key="freeformSize" width="343" height="400"/>
+                    <connections>
+                        <outlet property="buttonConfirm" destination="Wbc-Hu-thO" id="GUE-WR-b8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iU0-Gy-hvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,6 +457,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0168196205" green="0.01671890421" blue="0.016920336790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Avaliar"/>
+                                        <connections>
+                                            <action selector="actionRate:" destination="DAs-iG-Eok" eventType="touchUpInside" id="tiM-AP-zsE"/>
+                                        </connections>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-HD-jwt">
                                         <rect key="frame" x="88" y="117" width="166" height="30"/>
@@ -481,6 +490,9 @@
                         <viewLayoutGuide key="safeArea" id="1U0-Bc-RYe"/>
                     </view>
                     <size key="freeformSize" width="343" height="667"/>
+                    <connections>
+                        <outlet property="buttonRate" destination="Jgr-fX-v27" id="oom-v3-wpp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMf-tM-cMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

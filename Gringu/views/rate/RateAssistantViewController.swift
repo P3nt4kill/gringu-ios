@@ -11,4 +11,9 @@ import UIKit
 
 class RateAssistantViewController: UIViewController {
   
+  @IBOutlet weak var buttonRate: UIButton!
+  
+  @IBAction func actionRate(_ sender: UIButton) {
+    mainStore.dispatch(AssistantEvaluated(score: 5)) // TODO
+  }
 }
