@@ -31,6 +31,9 @@ class GringuViewController: UIViewController,
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     mainStore.subscribe(self)
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      self.presentContainerViewFirstTime()
+    }
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -124,6 +127,15 @@ extension GringuViewController {
 
 // MARK: -
 extension GringuViewController {
+  private func presentContainerViewFirstTime() {
+    UIView.animate(
+      withDuration: ViewConfig.fadeInTime,
+      animations: {
+        self.containerViewBottomConstraint.constant = ViewConfig.containerViewBottomVisible
+        self.view.layoutIfNeeded()
+      },
+      completion: { _ in })
+  }
   private func hideContainerView(_ completed: @escaping (Bool) -> Void) {
     UIView.animate(
       withDuration: ViewConfig.fadeInTimeSlow,
